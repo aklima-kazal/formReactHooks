@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import RootLayout from "./Layouts/RootLayout";
+import { useState } from "react";
 
 const App = () => {
   const [board, setBoard] = useState(Array(9).fill(null));
@@ -48,6 +47,7 @@ const App = () => {
     }
     return "Next player : " + (isXTurn ? "X" : "0");
   }
+
   function resetGame() {
     setBoard(Array(9).fill(null));
     setIsXTurn(true);
